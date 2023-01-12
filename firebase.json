@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Didn't find a Hosting config in firebase.json. Run firebase init hosting instead",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+<mat-card>
+    <h1>Actualizar Estudios</h1>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form *ngIf="estudio" (submit) = "actualizarDatos()">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Institución</mat-label>
+                            <input
+                            [(ngModel)]="estudio.institucion"
+                            autofocus
+                            required
+                            type="text"
+                            name="institucion"
+                            matInput
+                            >
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Carrera</mat-label>
+                            <input
+                            [(ngModel)]="estudio.carrera"
+                            autofocus
+                            required
+                            type="text"
+                            name="estado"
+                            matInput
+                            >
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Estado de la carrera</mat-label>
+                            <input
+                            [(ngModel)]="estudio.descripcionEstudios"
+                            autofocus
+                            required
+                            type="text"
+                            name="estado"
+                            matInput
+                            >
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Fecha de inicio y fecha de culminación</mat-label>
+                            <input
+                            [(ngModel)]="estudio.fechas"
+                            autofocus
+                            required
+                            type="text"
+                            name="estado"
+                            matInput
+                            >
+                        </mat-form-field>
+                        <div class="container text-center mt15" >
+                            <button mat-raised-button color="primary">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+

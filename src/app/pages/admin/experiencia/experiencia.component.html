@@ -1,0 +1,30 @@
+<section>
+    <div>
+        <div class="col-md">
+          <img src="../../../assets/Experiencia.jpg" class="img-fluid img-secciones" alt="Mujer Programando">
+        </div>
+        <div class="container">
+              <a class="icono" routerLink="/admin/agregarExperiencia">
+                <img src="../../../../assets/add.png" alt="" width="50" height="50">
+              </a>
+              <h1 style="color: aliceblue;">Puedes agregar un campo para borrarlo. Los campos que aperecen ahora están hardcodeados.</h1>
+              <h1 class="titulo-seccion">Experiencia</h1>
+              <ul *ngFor="let exp of experiencias">
+                <a class="icono" (click)="eliminarExperiencia(exp.experienciaId)">
+                  <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+                </a>
+                  <li class="titulo2">{{exp.puesto}} {{exp.empresa}}</li>
+                  <li class="titulo2">{{exp.fechas}}</li>
+                  <li class="card-text">{{exp.descripcion}}</li>
+                </ul>  
+              <br>
+              <a class="icono">
+                <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+              </a>
+              <h2 class="titulo2">Cajera - Supermercado Oriente <br> noviembre 2014 - agosto 2022</h2>
+              <p class="card-text">
+                Empecé mi trayectoria profesional como cajera de Supermercado. Actualmente soy Estudiante de Desarrollo Web Full Stack. Busco oportunidad para adquirir experiencia en desarrollo de aplicaciones web. Tengo mucho para ofrecer.
+              </p>
+        </div>
+    </div>
+  </section>

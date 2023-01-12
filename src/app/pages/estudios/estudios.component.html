@@ -1,0 +1,36 @@
+<section>
+    <div data-aos="fade-left">
+        <div>
+            <img src="../../../assets/educacion.jpg" class="img-fluid img-secciones" alt="Salón de clases">
+      </div>
+      <div>
+        <a class="icono" routerLink="../agregarEstudios">
+          <img src="../../../../assets/add.png" alt="" width="50" height="50">
+        </a>
+        <h1 style="color: aliceblue;">Puedes agregar un campo para editarlo y borrarlo. Los campos que aperecen ahora están hardcodeados.</h1>
+        <h1 class="titulo-seccion">Educación</h1>
+        <ul *ngFor="let est of estudios">
+          <a class="icono" [routerLink]="'/admin/estudios/'+est.estudiosId">
+          <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+        </a>
+        <a class="icono" (click)="eliminarCurso(est.estudiosId)">
+          <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+        </a>
+          <li class="titulo2">{{est.institucion}} </li>
+          <li class="titulo2">{{est.carrera}}</li>
+          <li class="titulo2">{{est.descripcionEstudios}}</li>
+          <li class="card-text">{{est.fechas}}</li>
+        </ul> 
+        <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+          </a>
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+          </a>
+            <h2 class="titulo2">Universidad Tecnológica Intercontinental <br> Ingeniería Informática (Abandonado)</h2>
+            <p class="card-text">
+                 marzo 2011 - noviembre 2013
+            </p> 
+        </div>
+    </div>
+</section>

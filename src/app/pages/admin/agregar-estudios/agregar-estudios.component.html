@@ -1,0 +1,47 @@
+<mat-card>
+    <h1>Agregar Estudios</h1>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form (ngSubmit)="formSubmit()">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Institución</mat-label>
+                            <input
+                            autofocus
+                            required
+                            type="text"
+                            name="institucion"
+                            matInput
+                            [(ngModel)]="estudios.institucion">
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Carrera</mat-label>
+                            <input
+                            autofocus
+                            required
+                            type="text"
+                            name="carrera"
+                            matInput
+                            [(ngModel)]="estudios.carrera">
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Fecha de inicio y fecha de terminación</mat-label>
+                            <input
+                            autofocus
+                            required
+                            type="text"
+                            name="fechas"
+                            matInput
+                            [(ngModel)]="estudios.fechas">
+                        </mat-form-field>
+                        <div class="container text-center mt15" >
+                            <button mat-raised-button color="primary">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+

@@ -1,0 +1,55 @@
+<mat-card>
+    <h1>Agregar Experiencia</h1>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form (ngSubmit)="formSubmit()">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Puesto</mat-label>
+                            <input
+                            autofocus
+                            required
+                            type="text"
+                            name="puesto"
+                            matInput
+                            [(ngModel)]="experiencia.puesto">
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Empresa</mat-label>
+                            <input
+                            autofocus
+                            required
+                            type="text"
+                            name="empresa"
+                            matInput
+                            [(ngModel)]="experiencia.empresa">
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Fecha de inicio y fecha de terminación</mat-label>
+                            <input
+                            autofocus
+                            required
+                            type="text"
+                            name="fechas"
+                            matInput
+                            [(ngModel)]="experiencia.fechas">
+                        </mat-form-field>
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Descripción del puesto de trabajo</mat-label>
+                            <textarea
+                            required
+                            name="descripcion"
+                            matInput
+                            [(ngModel)]="experiencia.descripcion">
+                            </textarea>
+                        </mat-form-field>
+                        <div class="container text-center mt15" >
+                            <button mat-raised-button color="primary">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

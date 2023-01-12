@@ -1,0 +1,99 @@
+<section>
+    <div>
+                <img data-aos="fade-left" src="../../../assets/cursos.jpg" class="img-fluid img-secciones" alt="Cursos">
+    </div>
+            <div data-aos="fade-left">
+              <a class="icono add" routerLink="/admin/agregarCurso">
+                <img src="../../../../assets/add.png" alt="" width="50" height="50">
+              </a>
+              <h1 style="color: aliceblue;">Puedes agregar un campo para editarlo y borrarlo. Los campos que aperecen ahora están hardcodeados.</h1>
+              <h1 class="titulo-seccion">Cursos</h1>
+              <section>
+                <ul *ngFor="let curs of curso">
+                  <a class="icono" [routerLink]="'/admin/cursos/'+curs.cursosId">
+                  <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+                </a>
+                <a class="icono" (click)="eliminarCurso(curs.cursosId)">
+                  <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+                </a>
+                  <li class="titulo2">{{curs.institucionCurso}} </li>
+                  <li class="titulo2">{{curs.descripcionCurso}}</li>
+                  <li class="card-text">{{curs.estadoCurso}}</li>
+                </ul>  
+              </section>
+              <a class="icono" href="#" target="_blank">
+                <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+              </a>
+              <a class="icono" href="#">
+                <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+              </a>
+                <img class="img-cursos" src="../../../assets/argentinaPrograma.png" alt="Argentina Programa">
+                    <h2 class="titulo2">Argentina Programa - #YoProgramo <br>Desarrollo Web Full Stack</h2>
+                    <h3 class="titulo2">Ministerio de Desarrollo Productivo - Cámara de la Industria Argentina del Software (CESSI) <br>- Instituto Nacional de Tecnología Industrial (INTI)</h3>
+                    <p class="card-text">
+                        En curso
+                    </p>
+                    <br><br>
+                    
+        </div>
+        <div data-aos="fade-right">
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+          </a>
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+          </a>
+          <img class="img-cursos" src="../../../assets/argentinaPrograma.png" alt="Argentina Programa">
+              <h2 class="titulo2">Argentina Programa - #SéProgramar <br> Programación </h2>
+              <h3 class="titulo2">Ministerio de Desarrollo Productivo - Cámara de la Industria Argentina del Software (CESSI) <br>- Instituto Nacional de Tecnología Industrial (INTI)</h3>
+              <p class="card-text">
+                marzo 2022 - junio 2022
+              </p>
+              <br><br>
+        </div>
+        <div data-aos="fade-right">
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+          </a>
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+          </a>
+          <img class="img-cursos" src="../../../assets/Cursos-carlos-slim.png" alt="Capacitate para el empleo">
+              <h2 class="titulo2">Capacítate para el empleo <br>Desarrollador FrontEnd</h2>
+              <h3 class="titulo2">Fundación Carlos Slim</h3>
+              <p class="card-text">
+                julio 2018 - noviembre 2018
+             </p>
+          <br><br>
+        </div>
+        <div data-aos="fade-left">
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+          </a>
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+          </a>
+          <img class="img-cursos" src="../../../assets/portal_empleo.png" alt="Portal Empleo">
+              <h2 class="titulo2">Portal Empleo <br>Seguridad e Higiene/Prevención de Riesgos Laborales </h2>
+              <h3 class="titulo2">Ministerio de Trabajo, Empleo y Seguridad Social
+            </h3>
+              <p class="card-text">
+                febrero 2022 - marzo 2022
+              </p>
+        </div>
+        <div data-aos="fade-left">
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/editar.png" alt="" width="50" height="50">
+          </a>
+          <a class="icono" href="#" target="_blank">
+            <img src="../../../../assets/borrar.png" alt="" width="50" height="50">
+          </a>
+          <img class="img-cursos" src="../../../assets/One.png" alt="ONE" width="130" height="100">
+            <h2 class="titulo2">Oracle Next Education <br>Desarrollo Web</h2>
+            <h3 class="titulo2">Oracle - Alura Latam</h3>
+            <p class="card-text">
+              En curso
+            </p>
+        </div>
+      
+       
